@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "181905753152",
+    "firebase_url": "https://retrochat-da450.firebaseio.com",
+    "project_id": "retrochat-da450",
+    "storage_bucket": "retrochat-da450.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181905753152:android:a3cc202824c940e2760ba5",
+        "android_client_info": {
+          "package_name": "com.filpatterson.retr0_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "181905753152-i547osnks1prigtsartsi8aau8d11p0t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBAiNZ1P8HNGacYqC8tss9JKWj9jW6_0Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "181905753152-i547osnks1prigtsartsi8aau8d11p0t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

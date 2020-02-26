@@ -8,78 +8,79 @@
     tools:context=".MainActivity" >
 
     <EditText
-        android:id="@+id/user_name_register"
+        android:id="@+id/register_user_name"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:background="#454545"
+        android:autofillHints=""
+        android:background="@drawable/rounded_input_text_field"
         android:ems="10"
         android:hint="$root> input_your_username:"
         android:inputType="textPersonName"
+        android:paddingLeft="16dp"
         android:textColor="#FFFFFF"
         android:textColorHighlight="#807373"
         android:textColorHint="#979797"
-        android:paddingLeft="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.320"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.320" />
 
     <EditText
-        android:id="@+id/user_email_register"
+        android:id="@+id/register_user_email"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:background="#454545"
+        android:autofillHints=""
+        android:background="@drawable/rounded_input_text_field"
         android:ems="10"
         android:hint="$root> user's_email:"
         android:inputType="textEmailAddress"
+        android:paddingLeft="16dp"
         android:textColor="#FFFFFF"
         android:textColorHighlight="#807373"
         android:textColorHint="#979797"
-        android:paddingLeft="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.420"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.420" />
 
     <EditText
-        android:id="@+id/user_password_register"
+        android:id="@+id/register_user_password"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:background="#454545"
+        android:autofillHints=""
+        android:background="@drawable/rounded_input_text_field"
         android:ems="10"
         android:hint="$root> user's_password:"
         android:inputType="textPassword"
+        android:paddingLeft="16dp"
         android:textColor="#FFFFFF"
         android:textColorHighlight="#807373"
         android:textColorHint="#979797"
-        android:paddingLeft="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.520"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.520" />
 
     <Button
-        android:id="@+id/button_register"
+        android:id="@+id/register_button"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:background="#989898"
+        android:background="@drawable/rounded_input_text_field"
         android:text="Register"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -88,15 +89,15 @@
         app:layout_constraintVertical_bias="0.620" />
 
     <TextView
-        android:id="@+id/already_has_account"
+        android:id="@+id/register_already_has_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:text="# message: I already have an account"
         android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/button_register"
+        app:layout_constraintEnd_toEndOf="@+id/register_button"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="@+id/button_register"
-        app:layout_constraintTop_toBottomOf="@+id/button_register" />
+        app:layout_constraintStart_toStartOf="@+id/register_button"
+        app:layout_constraintTop_toBottomOf="@+id/register_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
