@@ -7,14 +7,20 @@ import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
 
+/**
+ * Interface setting communication methods with server
+ */
 interface ApiService {
 
+    //  login service that allows registration if there is no such user
     @POST("/login")
     fun login(@Body body:RequestBody): Call<UserModel>
 
+    //  send message service
     @POST("/send-message")
     fun sendMessage(@Body body:RequestBody): Call<String>
 
+    //  getting all users from server
     @GET("/users")
     fun getUsers(): Call<List<UserModel>>
 }

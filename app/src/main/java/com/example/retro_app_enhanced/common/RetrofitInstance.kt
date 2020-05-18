@@ -27,6 +27,7 @@ class RetrofitInstance {
                 .client(httpClient.build())
                 .build()
 
+            //  connect possible communication methods with server
             retrofit.create(ApiService::class.java)
         }
     }

@@ -3,6 +3,9 @@ package com.example.retro_app_enhanced.model
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
+/**
+ * User model that contains all required information about user
+ */
 data class UserModel(@SerializedName("_id") @Expose var id: String,
                      @SerializedName("name") @Expose var name: String,
                      @SerializedName("password") @Expose var password: String,

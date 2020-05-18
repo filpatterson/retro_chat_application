@@ -1,13 +1,13 @@
-package com.example.retro_app_enhanced
+package com.example.retro_app_enhanced.view
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.example.retro_app_enhanced.R
 import com.example.retro_app_enhanced.common.RetrofitInstance
 import com.example.retro_app_enhanced.common.Singleton
 import com.example.retro_app_enhanced.model.UserModel
-import com.example.retro_app_enhanced.view.UsersView
 import kotlinx.android.synthetic.main.login_view.*
 import okhttp3.MediaType
 import okhttp3.RequestBody
@@ -16,7 +16,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class MainActivity : AppCompatActivity() {
+class LoginView : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
             override fun onResponse(call: Call<UserModel>?, response: Response<UserModel>?) {
                 if (response!!.code() == 200) {
                     Singleton.getInstance().currentUser = response.body()!!
-                    startActivity(Intent(this@MainActivity,
+                    startActivity(Intent(this@LoginView,
                         UsersView::class.java))
                     finish()
                 }
