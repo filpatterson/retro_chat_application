@@ -1,0 +1,2 @@
+rootProject.name='retro_app_enhanced'
+include ':app'
