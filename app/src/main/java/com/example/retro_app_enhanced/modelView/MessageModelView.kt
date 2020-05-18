@@ -75,6 +75,10 @@ class MessageModelView (private var list: ArrayList<MessageModel>)
             val params = cardView.layoutParams as RelativeLayout.LayoutParams
             if (message.senderId == Singleton.getInstance().currentUser.id) {
                 params.addRule(RelativeLayout.ALIGN_PARENT_RIGHT)
+                params.marginStart = 130
+            } else {
+                params.addRule(RelativeLayout.ALIGN_PARENT_LEFT)
+                params.marginEnd = 130
             }
         }
     }
