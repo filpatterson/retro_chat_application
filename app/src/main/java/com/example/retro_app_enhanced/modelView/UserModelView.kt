@@ -106,9 +106,7 @@ class UserModelView(private var list: ArrayList<UserModel>, private var listener
                 presenceImageView.setImageDrawable(this.context.resources.getDrawable(
                     R.drawable.presence_icon
                 ))
-
             }
-
         }
     }
 

@@ -65,7 +65,7 @@ class MessageModelView (private var list: ArrayList<MessageModel>)
         //  bind view to the holder
         fun bind(message: MessageModel) = with(itemView) {
             //  how message content needs to be displayed
-            val messageToShow = ">" + message.senderName + ":\ncontent: " + message.message + "\n" +
+            val messageToShow = ">" + message.senderName + ":\n" + message.message + "\n" +
                     "unx_tm: " + message.messageTime
 
             //  append message content to the view
