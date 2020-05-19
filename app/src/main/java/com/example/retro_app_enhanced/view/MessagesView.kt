@@ -100,7 +100,7 @@ class MessagesView : AppCompatActivity() {
         }
 
         //  logging channel name
-        Log.i("ChatRoom", nameOfChannel)
+        Log.i("MessagesView", nameOfChannel)
 
         //  subscribe to the private communication channel with defined name and listen for events
         pusher.subscribePrivate(nameOfChannel, object : PrivateChannelEventListener {
@@ -118,7 +118,7 @@ class MessagesView : AppCompatActivity() {
                         jsonObject.getString("sender_name")
                 )
 
-                Log.e("ChatRoom", messageModel.toString())
+                Log.e("MessagesView", messageModel.toString())
 
                 //  add message to the view
                 runOnUiThread {
@@ -128,11 +128,11 @@ class MessagesView : AppCompatActivity() {
             }
 
             override fun onAuthenticationFailure(p0: String?, p1: Exception?) {
-                Log.e("ChatRoom", p1!!.localizedMessage)
+                Log.e("MessagesView", p1!!.localizedMessage)
             }
 
             override fun onSubscriptionSucceeded(p0: String?) {
-                Log.i("ChatRoom", "Successful subscription")
+                Log.i("MessagesView", "Successful subscription")
             }
 
         }, "new-message")
@@ -169,12 +169,12 @@ class MessagesView : AppCompatActivity() {
                 //  try sending message via retrofit instance and show output in log field
                 RetrofitInstance.retrofit.sendMessage(jsonBody).enqueue(object: Callback<String>{
                     override fun onFailure(call: Call<String>?, t: Throwable?) {
-                        Log.e("ChatRoom",t!!.localizedMessage)
+                        Log.e("MessagesView",t!!.localizedMessage)
 
                     }
 
                     override fun onResponse(call: Call<String>?, response: Response<String>?) {
-                        Log.e("ChatRoom",response!!.body())
+                        Log.e("MessagesView",response!!.body())
                     }
 
                 })

@@ -88,9 +88,10 @@ class UsersView : AppCompatActivity(),
             //  this function appends "is online" view to those users who are logged inside system
             override fun onUsersInformationReceived(p0: String?, users: MutableSet<User>?) {
                 for (user in users!!) {
+                    Log.i("usersView----", user.toString())
                     if (user.id != Singleton.getInstance().currentUser.id){
                         runOnUiThread {
-                            Log.e("usersView", user.toString())
+                            Log.i("usersView", user.toString())
                             mAdapter.showUserOnline(user.toUserModel())
                         }
                     }

@@ -5,7 +5,9 @@ import com.example.retro_app_enhanced.model.UserModel
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
-
+/**
+ * This is unit testing of models and their behavior in app
+ */
 class ModelsUnitTesting {
 
     /**

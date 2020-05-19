@@ -64,7 +64,7 @@ app.post('/login', (req, res) => {
             if(currentUser.password === req.body.password) {
                 //  send back user credentials for working inside system
                 res.status(200).send(user)
-                console.log(user)
+                console.log(res)
             } else {
                 res.send(400)
             }
